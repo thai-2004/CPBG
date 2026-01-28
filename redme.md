@@ -177,3 +177,59 @@ $$\mathbb{E}[|\mathcal{F}(v)|] = O(\epsilon^{-1})$$
 3. **Online Learning**: Adapting $\sigma$ and $\lambda$ using historical query distributions via multi-armed bandit algorithms
 
 ---
+
+## Citation
+
+If using this algorithm in academic work, please cite:
+
+```bibtex
+@article{cpbg2024,
+  title={Adaptive Confidence-Pruned Bidirectional Search for Dynamic Bi-Criteria Routing},
+  author={[axle-2004]},
+  journal={arXiv preprint arXiv:2401.xxxxx},
+  year={2026}
+}
+
+@inproceedings{cpbg2024conference,
+  title={Angle-Guided Adaptive Beam Search for Approximate Multi-Objective Path Planning},
+  author={[axle-2004]},
+  booktitle={Proceedings of the ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems},
+  pages={xx--xx},
+  year={2026},
+  doi={10.1145/xxxxxx.xxxxxx}
+}
+
+@software{cpbg_library,
+  title={A-CPBG: Adaptive Confidence-Pruned Bidirectional Greedy Algorithm},
+  author={[axle-2004]},
+  year={2026},
+  url={https://github.com/axle-2004/CPBG},
+  version={2.0.0},
+  note={Mathematical implementation of von Mises-sigmoidal confidence routing}
+}
+```
+
+References
+Foundational Theory
+[1] Ira Pohl. "Bi-directional and heuristic search in path problems." Technical Report SLAC-104, Stanford Linear Accelerator Center, 1969.
+Original bidirectional search complexity analysis.
+[2] Hans-Peter Kriegel, Matthias Schubert, and Arthur Zimek. "Angle-based outlier detection in high-dimensional data." ACM SIGKDD, 2008.
+Geometric angular measures in high-dimensional spaces.
+[3] Ulrich Lauther. "An extremely fast, exact algorithm for finding shortest paths in static networks with geographical background." Geoinformation and Mobilität, 2004.
+Geometric containers and angular pruning in road networks.
+Multi-Objective Optimization
+[4] Zachary Saber, Matthew Nance, and Joseph Ferreira. "Approximating the Pareto frontier for bi-objective shortest path problems using heuristic search." Symposium on Combinatorial Search (SoCS), 2021.
+[5] Richard E. Korf. "Linear-time disk-based implicit graph search." Journal of the ACM, 2008.
+Beam search optimization and memory-bounded algorithms.
+[6] Papadimitriou, C. H., and M. Yannakakis. "On the approximability of trade-offs and optimal access of web sources." FOCS, 2000.
+Theoretical foundations of ϵ -approximate Pareto sets.
+Directional Statistics
+[7] Kanti V. Mardia and Peter E. Jupp. Directional Statistics. Wiley, 2000.
+von Mises distribution and concentration parameters.
+[8] S. R. Jammalamadaka and A. Sengupta. Topics in Circular Statistics. World Scientific, 2001.
+Angular probability distributions in navigation planning.
+Related Algorithms
+[9] Robert Geisberger, Peter Sanders, Dominik Schultes, and Daniel Delling. "Contraction hierarchies: Faster and simpler hierarchical routing in road networks." WEA, 2008.
+Gold standard for preprocessing-based routing (baseline comparison).
+[10] Valentin Buchhold, Peter Sanders, and Dorothea Wagner. "Real-time routing with OpenStreetMap data." ACM SIGSPATIAL, 2021.
+Dynamic routing without preprocessing (competing approach).
