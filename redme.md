@@ -209,27 +209,4 @@ If using this algorithm in academic work, please cite:
 }
 ```
 
-References
-Foundational Theory
-[1] Ira Pohl. "Bi-directional and heuristic search in path problems." Technical Report SLAC-104, Stanford Linear Accelerator Center, 1969.
-Original bidirectional search complexity analysis.
-[2] Hans-Peter Kriegel, Matthias Schubert, and Arthur Zimek. "Angle-based outlier detection in high-dimensional data." ACM SIGKDD, 2008.
-Geometric angular measures in high-dimensional spaces.
-[3] Ulrich Lauther. "An extremely fast, exact algorithm for finding shortest paths in static networks with geographical background." Geoinformation and Mobilität, 2004.
-Geometric containers and angular pruning in road networks.
-Multi-Objective Optimization
-[4] Zachary Saber, Matthew Nance, and Joseph Ferreira. "Approximating the Pareto frontier for bi-objective shortest path problems using heuristic search." Symposium on Combinatorial Search (SoCS), 2021.
-[5] Richard E. Korf. "Linear-time disk-based implicit graph search." Journal of the ACM, 2008.
-Beam search optimization and memory-bounded algorithms.
-[6] Papadimitriou, C. H., and M. Yannakakis. "On the approximability of trade-offs and optimal access of web sources." FOCS, 2000.
-Theoretical foundations of ϵ -approximate Pareto sets.
-Directional Statistics
-[7] Kanti V. Mardia and Peter E. Jupp. Directional Statistics. Wiley, 2000.
-von Mises distribution and concentration parameters.
-[8] S. R. Jammalamadaka and A. Sengupta. Topics in Circular Statistics. World Scientific, 2001.
-Angular probability distributions in navigation planning.
-Related Algorithms
-[9] Robert Geisberger, Peter Sanders, Dominik Schultes, and Daniel Delling. "Contraction hierarchies: Faster and simpler hierarchical routing in road networks." WEA, 2008.
-Gold standard for preprocessing-based routing (baseline comparison).
-[10] Valentin Buchhold, Peter Sanders, and Dorothea Wagner. "Real-time routing with OpenStreetMap data." ACM SIGSPATIAL, 2021.
-Dynamic routing without preprocessing (competing approach).
+ReferencesFoundational TheorySearch Complexity: [1] Ira Pohl. "Bi-directional and heuristic search in path problems." Technical Report SLAC-104, 1969. Original bidirectional search complexity analysis.Geometric Angular Measures: [2] Hans-Peter Kriegel, Matthias Schubert, and Arthur Zimek. "Angle-based outlier detection in high-dimensional data." ACM SIGKDD, 2008. Focuses on geometric measures in high-dimensional spaces.Angular Pruning: [3] Ulrich Lauther. "An extremely fast, exact algorithm for finding shortest paths in static networks with geographical background." Geoinformation und Mobilität, 2004. Explores geometric containers and angular pruning in road networks.Multi-Objective OptimizationPareto Approximation: [4] Zachary Saber, Matthew Nance, and Joseph Ferreira. "Approximating the Pareto frontier for bi-objective shortest path problems using heuristic search." Symposium on Combinatorial Search (SoCS), 2021.Memory-Bounded Search: [5] Richard E. Korf. "Linear-time disk-based implicit graph search." Journal of the ACM, 2008. Discusses Beam search optimization and memory-bounded algorithms.Theoretical Foundations: [6] Papadimitriou, C. H., and M. Yannakakis. "On the approximability of trade-offs and optimal access of web sources." FOCS, 2000. Fundamental theory of $\epsilon$-approximate Pareto sets.Directional StatisticsConcentration Parameters: [7] Kanti V. Mardia and Peter E. Jupp. Directional Statistics. Wiley, 2000. Detailed analysis of the von Mises distribution and concentration parameters.Navigation Planning: [8] S. R. Jammalamadaka and A. Sengupta. Topics in Circular Statistics. World Scientific, 2001. Covers angular probability distributions in navigation planning.Related AlgorithmsContraction Hierarchies: [9] Robert Geisberger, Peter Sanders, Dominik Schultes, and Daniel Delling. "Contraction hierarchies: Faster and simpler hierarchical routing in road networks." WEA, 2008. The gold standard for preprocessing-based routing.Real-Time Routing: [10] Valentin Buchhold, Peter Sanders, and Dorothea Wagner. "Real-time routing with OpenStreetMap data." ACM SIGSPATIAL, 2021. Dynamic routing without preprocessing (competing approach).
