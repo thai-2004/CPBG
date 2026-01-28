@@ -245,23 +245,6 @@ If using this algorithm in academic work, please cite:
 **Real-Time Routing**:
 [10] Valentin Buchhold, Peter Sanders, and Dorothea Wagner. "Real-time routing with OpenStreetMap data." ACM SIGSPATIAL, 2021. Dynamic routing without preprocessing (competing approach).
 
----
 
-## Tổng quan (Tiếng Việt)
 
-### Tóm tắt
-Chúng tôi giới thiệu một thuật toán xấp xỉ mới cho bài toán tìm đường đi ngắn nhất theo hai tiêu chí trên đồ thị trọng số Euclid. Thuật toán này kết hợp **tìm kiếm heuristic hai chiều** với **cắt tỉa chùm thích ứng** (adaptive beam pruning), được dẫn dắt bởi một thước đo độ tin cậy tổng hợp. Hàm tin cậy này tích hợp **độ lệch hướng von Mises** với **hệ số tiến độ sigmoid**, tạo ra một tiêu chí lựa chọn tối ưu cục bộ. Điều này đảm bảo xấp xỉ biên Pareto với tỷ lệ $(1+\epsilon)$ với xác suất cao, đồng thời đạt được độ phức tạp truy vấn kỳ vọng là $O(b^{d/2})$—một sự cải thiện theo hàm mũ so với các phương pháp đơn chiều.
-
-### Các đặc điểm chính
-1.  **Mô hình đồ thị**: Xem xét đồ thị có hướng với trọng số chi phí ($w_c$) và thời gian ($w_t$), các đỉnh được nhúng trong mặt phẳng Euclid.
-2.  **Hàm tin cậy**:
-    *   **Định hướng (von Mises)**: Ưu tiên các cạnh hướng về phía mục tiêu.
-    *   **Tiến độ (Sigmoid)**: Đánh giá hiệu quả của cạnh dựa trên tỷ lệ giữa tiến độ khoảng cách và chi phí hỗn hợp.
-3.  **Thuật toán A-CPBG**:
-    *   Sử dụng tìm kiếm hai chiều (từ nguồn và từ đích).
-    *   Cắt tỉa các nhánh tìm kiếm kém hứa hẹn dựa trên $\epsilon$-dominance (trội $\epsilon$).
-    *   Kết thúc khi chi phí tìm thấy nằm trong giới hạn xấp xỉ cho phép.
-
-### So sánh hiệu năng
-Thuật toán A-CPBG vượt trội hơn so với các phương pháp truyền thống như Dijkstra (đơn mục tiêu, chính xác) hay BOA* (đa mục tiêu, Pareto-optimal) nhờ khả năng cân bằng giữa tốc độ và độ chính xác xấp xỉ, đặc biệt là khả năng xử lý cập nhật trọng số động mà không cần tính toán lại từ đầu ($O(1)$ dynamic updates).
 
